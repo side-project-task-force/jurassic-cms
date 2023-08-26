@@ -30,8 +30,13 @@ jobs:
       - name: Setup nx
         uses: nrwl/nx-set-shas@v3
        
-      - uses: nrwl/nx-set-shas@v3
-      - run: pnpm install
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+          
+      - name: Run pnpm install
+        run: pnpm install
 
       - name: Setup Deno
         # uses: denoland/setup-deno@v1
