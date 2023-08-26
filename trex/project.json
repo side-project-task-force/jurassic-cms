@@ -1,0 +1,43 @@
+{
+  "name": "trex",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "trex/src",
+  "targets": {
+    "build": {
+      "executor": "@nx/deno:esbuild",
+      "outputs": [
+        "dist/trex"
+      ],
+      "options": {
+        "main": "trex/src/main.ts",
+        "outputFile": "dist/trex/main.js",
+        "denoConfig": "trex/deno.json"
+      }
+    },
+    "serve": {
+      "executor": "@nx/deno:run",
+      "options": {
+        "buildTarget": "trex:build",
+        "watch": true
+      }
+    },
+    "test": {
+      "executor": "@nx/deno:test",
+      "outputs": [
+        "coverage/trex"
+      ],
+      "options": {
+        "coverageDirectory": "coverage/trex",
+        "denoConfig": "trex/deno.json"
+      }
+    },
+    "lint": {
+      "executor": "@nx/deno:lint",
+      "options": {
+        "denoConfig": "trex/deno.json"
+      }
+    }
+  },
+  "tags": []
+}
