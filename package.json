@@ -1,0 +1,13 @@
+{
+  "name": "@./jurassic-cms/source",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {},
+  "private": true,
+  "devDependencies": {
+    "@nx/deno": "16.7.0",
+    "@nx/workspace": "16.7.4",
+    "nx": "16.7.4",
+    "nx-cloud": "latest"
+  }
+}
