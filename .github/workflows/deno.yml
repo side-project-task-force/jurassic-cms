@@ -49,7 +49,7 @@ jobs:
       #   run: deno fmt --check
 
       - name: Run linter
-        run: nx run trex:lint
+        run: npx nx run trex:lint
 
       - name: Run tests
-        run: nx run trex:test
+        run: npx nx run trex:test
