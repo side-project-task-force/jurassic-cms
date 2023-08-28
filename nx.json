@@ -37,5 +37,9 @@
   },
   "plugins": [
     "@nx/deno"
-  ]
+  ],
+  "workspaceLayout": {
+    "appsDir": "apps",
+    "libsDir": "libs"
+  }
 }

@@ -1,5 +1,5 @@
 {
-  "importMap": "../import_map.json",
+  "importMap": "../../import_map.json",
   "tasks": {
     "start": "npx nx serve",
     "lint": "npx nx lint",
