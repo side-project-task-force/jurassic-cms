@@ -10,5 +10,5 @@
 ## Starting the trex web server
 
 - to start a dev server run: `$ nx run trex:serve`
-- linting: `$ nx run trex:serve`
+- linting: `$ nx run trex:lint`
 - running unit tests `$ nx run trex:test`
