@@ -4,6 +4,10 @@
   "license": "MIT",
   "scripts": {},
   "private": true,
+  "engines" : { 
+    "npm" : ">=9.0.0",
+    "node" : ">=18.0.0"
+  },
   "devDependencies": {
     "@nx/deno": "16.7.0",
     "@nx/workspace": "16.7.4",
